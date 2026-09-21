@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="gbKBFfmJbHgeKlHSCIO143">
+<head data-page-node-id="XQC46TirO0oMUDlzPYpiG6">
+  <meta charset="UTF-8" data-page-node-id="vF1uorSDmYseCJAWTTbFbr" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="dSW7SSoewXKFAeYkFnvHnK" />
+  <title>嘉享AI助手 - 销售赋能工作台</title>
+  <meta name="description" content="嘉环教育销售赋能 AI 工作台：智能问答、产品场景融入、智能报价、文档获取、AI领学、AI陪练" data-page-node-id="5YPk59AduCFBVBpdGsPf8y" />
+  <link rel="stylesheet" href="assets/css/style.css" data-page-node-id="WlQdcIG4hovGYuBbiJY1p8" />
+</head>
+<body data-page-node-id="8EHP8y3XL5X5YqEdVFwCKx">
+  <div id="app" class="app" data-page-node-id="usHtuyw5RHsIgFpHuBTZnm">
+    <!-- 顶部导航 -->
+    <header class="topbar" data-page-node-id="kpYLI3kU7wG9ZbEm0cj7wP">
+      <div class="brand" data-page-node-id="CURqTy5AFb45nE9kk675YN">
+        <div class="logo" aria-label="嘉享AI" data-page-node-id="nxUT0CHYAWXTRxu7NMvFDc">嘉</div>
+        <div class="brand-text" data-page-node-id="mysvTYrnN1uQa7BPMEi25Q">
+          <span class="brand-name" data-page-node-id="QODpfx9G6xsUAZ8mkSQr07">嘉享AI</span>
+          <span class="brand-sub" data-page-node-id="ELKYn2xku6LJ9EQI2kEV7L">销售赋能助手</span>
+        </div>
+      </div>
+      <div class="topbar-right" data-page-node-id="PQHMZUyPz4F4bH4mlfQYFG">
+        <span class="badge" data-page-node-id="E7onQwGTL52pEql3sbx5mI">国内版</span>
+        <span class="company" id="topbar-org" data-page-node-id="gTg5ZtwJFMGBNi0BBQ1PC7">教育军团-产品部</span>
+        <div class="avatar" title="印良华" data-page-node-id="GnXPeWbkr5Yk2ZTJhZ64q0">印</div>
+      </div>
+    </header>
+
+    <!-- 左侧边栏 -->
+    <aside class="sidebar" data-page-node-id="dkPWGAKmGPtWmsUajWbN4u">
+      <button class="btn-new" type="button" onclick="app.newChat()" data-page-node-id="kBUOLd0JRDMYzgiu8Hf1Mo">
+        <span class="icon" data-page-node-id="iFQRBcAxQVdoShkfJMtyCq">+</span>
+        <span data-page-node-id="XyzRQlknVHrFndZptvgs4d">新建对话</span>
+      </button>
+      <button class="btn-clear" type="button" onclick="app.clearChats()" data-page-node-id="x9Rf6jgAnEzN2Yam2wB3uF">
+        <span class="icon" data-page-node-id="aOBONIXfHnWzmpCGPKymyB">⌫</span>
+        <span data-page-node-id="NzgrWyGEzZP2YQ4GjjjI0X">清空对话</span>
+      </button>
+      <div class="history" id="history" data-page-node-id="hu5TAayhbTTwr9CG4zrIF5">
+        <div class="history-empty" data-page-node-id="vFUIxLaifFAo6ywBI49Vkq">暂无会话记录</div>
+      </div>
+      <div class="sidebar-footer" data-page-node-id="lpHvY5TZXxJvbx7XUS5Y4s">
+        <div class="data-status" id="data-status" data-page-node-id="vklcRbm89cizVwPx6A5W2W">本地资料加载中…</div>
+        <button class="btn-config" type="button" onclick="app.openConfig()" data-page-node-id="EkNSD7yUgOHrTlazDakOoe">
+          <span data-page-node-id="roBGis3B0nDQtaHzbNqbVH">⚙️</span> 配置 WorkBuddy 增强链接
+        </button>
+      </div>
+    </aside>
+
+    <!-- 主内容区 -->
+    <main class="main" id="main" data-page-node-id="kj5OmvnjwgR6mA617yMllv">
+      <!-- 首页 -->
+      <div id="home-view" class="home-view" data-page-node-id="Qcyiz5yZsIypRm6nEvy8ME">
+        <div class="hero" data-page-node-id="k8X7CXkdM1KIygWWtUE5KK">
+          <div class="hero-icon" aria-hidden="true" data-page-node-id="M6tMgJbYA6kDOBVwh7nVba">🎓</div>
+          <h1 class="hero-title" data-page-node-id="o9YbXR43ZbTDDAxv9kkSEg">嘉享AI助手</h1>
+          <p class="hero-subtitle" data-page-node-id="8XZEpqVkfB93pSHm7QT3wN">您的智能销售伙伴，随时为您提供专业解答</p>
+          <div class="hero-tags" data-page-node-id="ADys3eotbjfywul89COKiH">
+            <span class="tag" data-page-node-id="71ETcVAEs6Qnf5k36qw7I4">多轮对话</span>
+            <span class="tag" data-page-node-id="94ALAE7ryCgShOkPOhGApQ">深度思考</span>
+            <span class="tag" data-page-node-id="HZtwUKCi6a0VQpzCf2hXJg">实时响应</span>
+            <span class="tag" data-page-node-id="uYpUACoov4DV3fF0H92FLD">产品知识库</span>
+          </div>
+        </div>
+
+        <div class="section-title" data-page-node-id="5BIXyVGYFKwFvHM299sUqp">欢迎体验以下功能</div>
+
+        <div class="cards-grid" id="cards-grid" data-page-node-id="oaWrpxxA8fSJnXSsHOYkxQ">
+          <!-- 卡片由 JS 渲染 -->
+        </div>
+
+        <div class="home-input-area" data-page-node-id="zUJDq6yIXN9wrWfwobTUi7">
+          <div class="input-bar" data-page-node-id="umY8ypFT8VB7g4GOnEOU1B">
+            <button class="input-action" title="上传文件" onclick="app.toast('请先选择一个功能模块')" data-page-node-id="reqqI26IND7KvGQQslKT3W">+</button>
+            <button class="input-action" title="语音输入" onclick="app.toast('语音功能待接入')" data-page-node-id="vZFB5aGSViQKFyVTd6aYew">🎤</button>
+            <input type="text" id="home-input" placeholder="输入你的问题，或点击上方卡片选择功能…" autocomplete="off" data-page-node-id="LfY732zwsIl3X6eEtsuj1f" />
+            <button class="btn-send" title="发送" onclick="app.homeSend()" data-page-node-id="SONLeGJy5sF5ilWvDgLYCZ">➤</button>
+          </div>
+          <p class="input-tip" data-page-node-id="osyjjun5KVaP3tFcmSyM1f">按 Enter 发送，Shift + Enter 换行</p>
+        </div>
+      </div>
+
+      <!-- 模块聊天页 -->
+      <div id="chat-view" class="chat-view hidden" data-page-node-id="GNI2yApXdKTohHxS74byoc">
+        <div class="chat-header" data-page-node-id="M4nAh0GFJwnAj7rfDqKv6E">
+          <button class="btn-back" onclick="app.goHome()" data-page-node-id="KkXUP6Wvm6ugk9t5VWLbCn">← 返回首页</button>
+          <span class="chat-title" id="chat-title" data-page-node-id="XqzM7gQLgZ3eG2JJLmd4bF">智能问答</span>
+          <span class="chat-status" id="chat-status" data-page-node-id="8BVgAxUGxw6G0oV6H1SxQx">● 准备就绪</span>
+        </div>
+        <div class="chat-messages" id="chat-messages" data-page-node-id="GGoFTHlyYhXMSfUcq8LCj6"></div>
+        <div class="chat-input-area" data-page-node-id="g3p5eob0a5oOhwXAcKjJao">
+          <div class="input-bar" data-page-node-id="g9ce0ntIRKjZOHQZWXOd9G">
+            <button class="input-action" title="上传文件" onclick="app.toast('请先绑定 WorkBuddy 链接以启用文件上传')" data-page-node-id="clGmZUkg6d1Cbf9jAlA60V">+</button>
+            <button class="input-action" title="语音输入" onclick="app.toast('语音功能待接入')" data-page-node-id="JtASLPzrCErk7P4NID8nxR">🎤</button>
+            <input type="text" id="chat-input" placeholder="输入你的问题…" autocomplete="off" data-page-node-id="lrx27SEwbpd616CUJ9E1zC" />
+            <button class="btn-send" title="发送" onclick="app.chatSend()" data-page-node-id="D5JwjOwTYfLhRCVtGntGET">➤</button>
+          </div>
+          <p class="input-tip" data-page-node-id="g3AWWJHGrxAOjBTj2tnI7m">按 Enter 发送，Shift + Enter 换行</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- 配置弹窗 -->
+    <div class="modal hidden" id="config-modal" data-page-node-id="gXG0o5Ba0YgQR1W3cXy2bQ">
+      <div class="modal-backdrop" onclick="app.closeConfig()" data-page-node-id="iFK27ROgxv4Ej4RHRe9iiw"></div>
+      <div class="modal-content" data-page-node-id="kfTaSc1M0wPtmOj5CrjSie">
+        <div class="modal-header" data-page-node-id="h4rE7PRXDYbpb8UiPHmMFY">
+          <h3 data-page-node-id="0g3BhHLLBOcfXAdgXlC7Vo">配置 WorkBuddy 链接</h3>
+          <button class="btn-close" onclick="app.closeConfig()" data-page-node-id="ebTn4QhHmdCeIlDU8rk7G7">×</button>
+        </div>
+        <div class="modal-body" id="config-body" data-page-node-id="VcUFDNbRaFBg0oFLYwyVGZ">
+          <!-- 动态生成 -->
+        </div>
+        <div class="modal-footer" data-page-node-id="N7PSqsXIBXKkKKBDihwY4B">
+          <button class="btn-secondary" onclick="app.closeConfig()" data-page-node-id="LuDrR6JTjVg7WPJ4Gjv5Gc">取消</button>
+          <button class="btn-primary" onclick="app.saveConfig()" data-page-node-id="k3R7nAjf2vg75f5nA5a8Uw">保存</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 提示条 -->
+    <div id="toast" class="toast" data-page-node-id="vMEtBO1kHZdBBuBw8DCYtH"></div>
+  </div>
+
+  <script src="assets/data/resources.js"></script>
+  <script src="assets/data/knowledge-base.js"></script>
+  <script src="assets/data/quote-data.js"></script>
+  <script src="assets/data/stats.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
